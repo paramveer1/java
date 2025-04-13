@@ -1,15 +1,26 @@
-public class Demo4 {
-    int a = 8;
-    void a(){
-        System.out.println(this.a);
+class Parent {
+    int  a = 45;
+    
+}
+
+
+
+public class Demo4 extends Parent {
+   
+
+    void m(){
+        System.out.println(a);
+
     }
+    
     public static void main(String[] args) {
-        Demo4 d = new Demo4();
-        d.a=1;
-       d.a();
-       Demo4 e = new Demo4();
-       e.a();
+        // Demo4 d = new Demo4();
+       System.out.println(a);
+      int  a = 44;
+       System.out.println(a);
+       
        
     }
     
 }
+

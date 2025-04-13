@@ -1,3 +1,4 @@
+package Param;
 public class Animal {
 
     String  name = "Param";

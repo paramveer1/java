@@ -6,7 +6,7 @@ public class Switch {
         int b = sc.nextInt();
         char c = sc.next().charAt(0);
         switch(c){
-            case '+': System.out.println(a+b);
+            case 9: System.out.println(a+b);
             break;
             case '-': System.out.println(a-b);
             break;

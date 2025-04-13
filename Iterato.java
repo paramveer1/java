@@ -6,35 +6,21 @@ import java.util.Iterator;
 
 public class Iterato {
     public static void main(String[] args) {
-        List l = new ArrayList();
+        ArrayList l = new ArrayList();
     l.add(1);
     l.add(2);
     l.add("pa");
+    l.add(50);
     
     ListIterator li = l.listIterator();
     li.add("deepa");
     li.add("shanu");
+    li.add("param");
     Iterator itr= l.iterator();
-    
-    itr.next();
-    itr.remove();
-    
-    // li.remove();
-    
-    
-   
-    // itr.next();
-    // itr.remove();
-    // li.add("para");
-    // li.add("param");
-
-    
-
-   
-    System.out.println(l);
-   
-    
-        
+    while(itr.hasNext()){
+        System.out.println(itr.next());
+    }
+        System.out.println(l);
     }
     
     
