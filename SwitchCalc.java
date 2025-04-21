@@ -9,7 +9,8 @@ public class SwitchCalc {
         int b = sc.nextInt();
         System.out.println("Enter Operation");
         int c = sc.nextInt();
-        switch( c ){
+        short d = 21;
+        switch( d){
             case 9: System.out.println("jhdclihsclids");
             break;
             case '-': System.out.println(a-b);

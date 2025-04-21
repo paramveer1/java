@@ -6,7 +6,9 @@ public class SwitchCalc0{
         int b = sc.nextInt();
 
         // char c = sc.next().charAt(0);
-        int c = sc.nextInt();
+        // int c = sc.nextInt()
+         int c = 1;
+
         switch(c){
             case 1:System.out.println(a+b);
             break;
