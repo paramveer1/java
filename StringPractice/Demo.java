@@ -1,28 +1,46 @@
 package StringPractice;
+import java .util.HashMap;
+import java.util.Map;
 
-public class Demo {
-    public static void main(String[] args) {
-        String s = "param singh raja";
-       s =  s.concat("pg");
-    //    System.out.println(s);
-    //    System.out.println(s.equalsIgnoreCase("para"));
-    //   s =  s.replaceAll("par" , "sha");
 
-    // int a = s.indexOf("sin");
-    // System.out.println(s.startsWith("p"));
-    char [] c = s.toCharArray();
-    int count = 0;
-    for(char i : c)
-    {
-        if(i=='a')
+public class Demo 
+{
+    public static void main(String[] args)
+     {
+        String s = "paramveer singh rajawat";
+        char c[] = s.toCharArray();
+        HashMap<Character,Integer> hm = new HashMap();
+
+        for(char i:c)
         {
-            count++;
+            if(hm.containsKey(i))
+            {
+                hm.put(i,hm.get(i)+1);
+            }
+            else{
+                hm.put(i,1);
+            }
+
         }
-    }
+        System.out.println(hm);
+        int maxCount = 0;
+        char maxChar = ' ';
 
-      System.out.println(count);
+        for(Map.Entry<Character,Integer> me : hm.entrySet())
+        {
+                if(maxCount < me.getValue())
+                {
+                    maxCount = me.getValue();
+                    maxChar = me.getKey();
+                }
+        }
+        System.out.println(maxChar +" "+ maxCount);
+     }    
 
 
-    }
+
+
+
+
     
 }

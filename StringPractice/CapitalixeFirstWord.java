@@ -1,19 +1,22 @@
 package StringPractice;
+import java.util.Scanner;
 
-public class CapitalixeFirstWord {
-    public static void main(String[] args) {
-        String s = "param veer  song";
-        char [] c = s.toCharArray();
-        String S = "";
-        for(int i = 0;i<= c.length-1;i++)
-        {
-            if(i==0)
-            {
-                S= S+s.charAt(i);
+public class CapitalixeFirstWord
+ {
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
 
-            }
-        }
+        String s = sc.nextLine();
         
+       
+        
+        String first = s.substring(00, 1).toUpperCase();
+        String last = s.substring(1);
+        String full = first + last;
+                System.out.println(full);
+
+      
     }
     
 }
