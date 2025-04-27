@@ -15,6 +15,7 @@ public class DuplicateManual
                 if(s.charAt(i)== s.charAt(j))
                 {
                     b = true;
+                    break;
 
                 }
                
