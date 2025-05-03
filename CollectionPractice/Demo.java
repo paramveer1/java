@@ -9,7 +9,7 @@ public class Demo {
         ArrayList al = new ArrayList();
         al.addFirst("pa");
         System.out.println(al);
-        
+
         v.add("abhi");
         v.addFirst("afrin");
                 v.addFirst("afrinaaaa");
