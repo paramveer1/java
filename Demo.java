@@ -24,7 +24,7 @@ public class Demo {
        Demo d = new Demo();
     //    d.set("param",555);
 
-       System.out.println(name);
+       System.out.println("ok");
     d.ok();
         
         
