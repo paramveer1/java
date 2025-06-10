@@ -9,7 +9,7 @@ public class Duplicate {
     for(int i : a){
        if( lhs.add(i)== false){
         System.out.print(i+" ");
-        break;
+        
 
        }
     } 
